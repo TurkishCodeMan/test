@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rose-soft: #ffe4e6;
+  --color-rose-deep: #fb7185;
+}
+
+:root {
+  --rose-soft: #ffe4e6;
+  --rose-deep: #fb7185;
+}
+
+body {
+  color: #4a4a4a;
+  overflow-x: hidden;
+}
+
+.font-handwriting {
+  font-family: var(--font-dancing), cursive;
+}
+
+.font-serif {
+  font-family: var(--font-playfair), serif;
+}
