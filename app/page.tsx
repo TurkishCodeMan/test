@@ -397,6 +397,46 @@ export default function Home() {
             </footer>
           </motion.div>
         )}
+
+       <section className="container mx-auto px-5 py-20">
+  <motion.div
+    initial={{ opacity: 0, scale: 0.96 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    viewport={{ once: true }}
+    className="mx-auto max-w-5xl overflow-hidden rounded-[2.5rem] border border-white/80 bg-gradient-to-br from-rose-500 via-pink-500 to-fuchsia-500 p-1 shadow-[0_30px_90px_rgba(244,63,94,.35)]"
+  >
+    <div className="rounded-[2.3rem] bg-white/90 p-8 text-center backdrop-blur md:p-14">
+      <Sparkles className="mx-auto mb-5 h-10 w-10 fill-amber-300 text-amber-300" />
+
+      <h2 className="text-4xl font-black text-slate-900 md:text-6xl">
+        Sana özel bir gezi bileti 🎫
+      </h2>
+
+      <p className="mx-auto mt-6 max-w-3xl font-serif text-xl leading-9 text-slate-600">
+        Hilalcik, ellerini sımsıkı tutacağım ve birlikte{" "}
+        <a
+          href="https://www.google.com/maps/place/Şanlıurfa" // buraya istediğin yerin Google Maps linkini ekle
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-bold text-rose-500 underline hover:text-rose-600 transition-colors"
+        >
+          Senin seçtiğin yere :)
+        </a>{" "}
+        gideceğiz. Her adımımızda yanımda olacağın için şimdiden çok mutluyum. ❤️
+      </p>
+
+      <div className="mt-8 flex justify-center">
+        <motion.div
+          className="rounded-xl bg-rose-100 px-6 py-3 font-serif font-bold text-rose-600 shadow-lg shadow-rose-200 cursor-pointer"
+          animate={{ y: [0, -10, 0] }}
+          transition={{ repeat: Infinity, duration: 1.5 }}
+        >
+          Elimi tut, canım eşim ❤️
+        </motion.div>
+      </div>
+    </div>
+  </motion.div>
+</section>
       </AnimatePresence>
     </main>
   );
