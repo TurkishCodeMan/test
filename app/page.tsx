@@ -15,6 +15,7 @@ import {
   Sparkles,
   Star,
 } from "lucide-react";
+import HeartSurpriseGame from "./HeartSurpriseGame";
 
 interface TimelineItem {
   date: string;
@@ -314,6 +315,15 @@ export default function Home() {
                 ))}
               </div>
             </section>
+
+             {/* Özel kartlar bölümünden sonra */}
+    <section className="container mx-auto px-5 py-20">
+      <h2 className="text-center text-4xl font-black text-rose-600 md:text-6xl mb-12">
+        Şimdi küçük bir oyun! 🎉<br></br>
+        Kalplere tıkla ve sana söyleyeyim! ❤️
+      </h2>
+      <HeartSurpriseGame />
+    </section>
 
 <section className="container mx-auto px-5 py-10">
   <motion.div
